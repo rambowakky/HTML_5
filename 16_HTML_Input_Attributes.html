@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    div {
+        background-color: lightblue;
+        color: white;
+        width: 400px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+
+           </style>
+</head>
+<body>
+
+    <!-- input attributes value , readonly , size , rows , cols-->
+    <div>
+        <label for="userName">User Name :</label>
+        <input type="text" id="userName" value="Ryan">
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- readonly Attribute -->
+    <div>
+        <label for="userName1">User Name :</label>
+        <input type="text" id="userName1" value="Ryan" readonly>
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- Size Attribute -->
+    <div>
+        <label for="userName2">User Name :</label>
+        <input type="text" id="userName2" value="Ryan" size="40">
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- rows , cols Attribute -->
+    <div>
+        <label for="message">Message :</label>
+        <textarea rows="10" cols="20" id="message"></textarea>
+        <input type="submit" value="Send">
+    </div>
+
+    <!-- HTML 5 Form Input Attributes required,
+    novalidate , autofocus , pattern , placeholder -->
+
+    <!-- Required Attribute -->
+    <div>
+        <form>
+            <label for="userName4">User Name
+                 <span style="color: red;">*</span>
+            </label>
+            <input type="text" id="userName4" required>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <!-- novalidate Attribute -->
+    <div>
+        <form novalidate>
+            <label for="userName5">User Name
+                <span style="color: red;">*</span>
+            </label>
+            <input type="text" id="userName5" required>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <!-- autofocus Attribute -->
+    <h3>Autofocus Attribute</h3>
+    <div>
+        <form>
+
+            <label for="username">User Name:</label>
+            <input type="text" id="username" autofocus >
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <!-- pattern Attribute(twitter username) -->
+    <h3>Pattern Attribute</h3>
+    <div>
+        <form>
+            <label for="username3" User Name</label>
+            <input type="text" id="username3" pattern="^[A-Za-z0-9_]{1,15}$">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <!-- placeholder Attribute -->
+    <h3>Placeholder Attribute</h3>
+    <div>
+        <form>
+            <input type="text" placeholder="Enter your Name">
+            <br>
+            <textarea rows="5" cols="20" placeholder="Your message start here.."></textarea>
+        </form>
+    </div>
+
+    <!-- disabled Attribute -->
+    <h3>disabled Attribute</h3>
+    <div>
+        <form>
+            <input type="text" placeholder="Enter Name" disabled>
+            <input type="submit" disabled>
+        </form>
+    </div>
+
+<br><br><br>
+</body>
+</html>

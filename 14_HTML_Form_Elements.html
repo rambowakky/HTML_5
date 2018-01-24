@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML form element</title>
+    <style>
+    	div{
+    		background-color: lightblue;
+    		color: white;
+    		width: 350px;
+    		padding: 10px;
+    		margin: 5px;
+
+    	}
+    </style>
+</head>
+<body>
+
+
+    <!-- input and label -->
+    <div>
+    	<form>
+    		<label for="username">User Name</label>
+    		<input type="text" id="username">
+    		<br>
+    		<label for="password">Password</label>
+    		<input type="password" id="password">
+    		<br>
+    		<input type="submit" value="submit">
+
+    	</form>
+    </div>
+
+    <!-- Table Form -->
+    <div>
+    	<form>
+    		<table>
+    			<tr>
+    				<td>
+    					<label for="username">User Name:</label>
+    				</td>
+  
+    		
+    				<td>
+    					<input type="text" id="username">
+    				</td>
+    			</tr>
+    			<tr>
+    			<td>
+    				<lable for="password">Password:</lable>
+    			</td>
+    		
+    			<td>
+    				<input type="password" id="password">
+    			</td>
+    		</tr>
+    		<tr>
+    		
+    			<td>
+    				<label for="Select language">Select a language:</label>
+    				
+    			</td>
+    		<td>
+    			<select id="Select language">
+    				<option value="html">HTML</option>
+    				<option value="javascript">Javascript</option>
+    				<option value="css">CSS</option>
+    				<option value="angular js">Angular JS</option>
+    				<option value="bootstrap">Bootstrap</option>
+    			</select>
+    	</td>
+    	</tr>
+    	<tr>
+    		<td>
+    			<label for="message">Your Message:</label>
+    		</td>
+    		<td>
+    			<textarea id="message"rows="5"cols="30"></textarea>
+    		</td>
+    	</tr>
+    	<tr>
+    		<td colspan="2">
+    			<button>Button</button><!--normal button-->
+    			<input type="submit" value="submit">
+    			<input type="reset" value="reset">
+    		</td>
+    	</tr>
+    </table>
+</form>
+</div>
+<!--Select and option-->
+<form>
+	<label for="select-language">Select a Language:</label>
+	<select id="select-language">
+		<option value="html">HTML</option>
+		<option value="javascript">Javascript</option>
+		<option value="css">CSS</option>
+		<option value="bootstrap">Bootstrap</option>
+		<option value="jquery">JQuery</option>
+		<option value="angular js">Angular JS</option>
+	</select>
+</form>
+<br><br>
+<br>
+<!--Text Area-->
+<form>
+	<label for="message">Your Message</label>
+	<textarea id="message"rows"5"cols="10"></textarea>
+</form>
+
+<!--button-->
+<form>
+	<button>Button</button><!--Normal button-->
+	<input type="submit" value="submit"> <!--submit button-->
+	<input type="reset" value="reset">  <!--Reset button-->
+
+</form>
+<br>
+ <!--HTML5 datalist -->
+    <input list="technologies" name="tech">
+    <datalist id="technologies">
+        <option value="JavaScript">
+        <option value="CSS">
+        <option value="HTML">
+        <option value="Bootstrap">
+        <option value="Angular JS">
+    </datalist>
+    <br>
+    <br>
+    <br>
+
+
+
+    
+
+
+</body>
+</html>

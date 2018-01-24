@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Nav Element</title>
+    <style>
+    body{
+        margin: 0;
+        font-family:;
+    }
+     ul{
+            list-style-type: none;
+        
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background-color: black;
+            overflow: hidden;/*mandatory*/
+            color: white;
+        }
+       
+       ul li{
+            float: left;
+        }
+        li a{
+            text-decoration: none;/*removes underline*/
+            display: inline-block;/*to display inline block*/
+            padding: 14px 16px;
+            color: white;
+            font-size: 25px;
+        }
+        li a:hover{
+            background-color: skyblue;
+            color:white; 
+        }
+        li a.active{
+            background-color: forestgreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Careers</a>
+            </li>
+            <li>
+                <a href="#">forum</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>

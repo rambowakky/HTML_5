@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table</title>
+    <style>
+        table , th , td{
+            border: 2px solid red;
+            border-collapse:collapse;
+        }
+        th , td{
+            padding: 10px;
+            text-align: center;
+        }
+
+        #custom-table th{
+            background-color: orange;
+            color: blue;
+        }
+        #custom-table tr:nth-child(even){
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Simple Table Example -->
+     <h1>Simple Table</h1>
+    <table width="100%">
+  <thead>
+  <tr>
+  <th>Serial.no</th>
+  <th>Name</th>
+  <th>Address</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>1</td>
+  <td>Raju</td>
+  <td>Gadhinglaj</td>
+  </tr>
+   <tr>
+  <td>2</td>
+  <td>Rajesh</td>
+  <td>Aandra</td>
+  </tr>
+  <tr>
+  <td>3</td>
+  <td>Nitesh</td>
+  <td>Panjab</td>
+  </tr>
+   <tr>
+  <td>4</td>
+  <td>Narayan</td>
+  <td>Keral</td>
+  </tr>
+  <tr>
+  <td>5</td>
+  <td>Kapil</td>
+  <td>Dhule</td>
+  </tr>
+  <tr>
+  <td>4</td>
+  <td>Rahul</td>
+  <td>Goa</td>
+  </tr>
+  <tr>
+  <td>7</td>
+  <td>Rama</td>
+  <td>Katmandu</td>
+  </tr>
+  <tr>
+  <td>6</td>
+  <td>Mahi</td>
+  <td>Kolhapur</td>
+  </tr>
+  </tbody>
+  </table>
+
+    <!-- Table with Border all sides -->
+ 
+
+    <!-- Table with Border Collapse -->
+  
+
+    <!-- Table With Padding -->  
+
+
+    <!-- Table With Text Align -->  
+  
+
+    <!-- Table with Col Span -->
+    <h1>Table with col span</h1>
+    <table width="100%">
+      <thead>
+        <tr>
+          <th colspan="2"; align="center">Serial No & Company
+          <th colspan="2"; align="center">Salary & Mobile No
+        </tr>
+      </thead>
+      <table width="100%" id="custom-table">
+        <tr>
+            <th>NAME</th>
+            <th>Company</th>
+            <th>Salary</th>
+            <th>Mobile.No</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Microsoft</td>
+            <td>80000</td>
+            <td>9595304492</td>
+        </tr>
+        <tr>
+            <td>Meera</td>
+            <td>Google</td>
+            <td>90000</td>
+            <td>9673959933</td>
+        </tr>
+        <tr>
+            <td>Laura</td>
+            <td>Facebook</td>
+            <td>20000</td>
+            <td>9595304492</td>
+        </tr>
+    </table>
+ 
+  
+
+    <!-- Table With Row Span -->
+    <h1>Table With Row Span</h1>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>Serial Number</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>Ruby</td>
+                <td>Amrutsar</td>
+            </tr>   
+            <tr>
+                
+                <td>Wakky</td>
+                <td>Goa</td>
+            </tr>    
+            <tr>
+               <!--"<td>2</td>-->
+                <td rowspan="2">2</td>
+                <td>Stivan</td>
+                <td>Manglore</td>
+            </tr>
+             <tr>
+                <!--<td>2</td>-->
+                <td>Shyamal</td>
+                <td>Devrukh</td>
+            </tr>
+             <tr>
+                <td>2</td>
+                <td>Vedanti</td>
+                <td>Kolhapur</td>
+            </tr>
+          </table>
+            </tbody> 
+    
+
+    <!-- Custom Table with CSS -->
+      <h1>Custom Table with CSS</h1>
+    <table width="100%" id="custom-table">
+        <thead>
+            <tr>
+                <th>Serial Number</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Neesha</td>
+                <td>Nagpur</td>
+            </tr>   
+            <tr>
+                <td>2</td>
+                <td>Harsh</td>
+                <td>Hyderabad</td>
+            </tr>  
+            <tr>
+                <td>1</td>
+                <td>Mohini</td>
+                <td>Banglore</td>
+            </tr>  
+            <tr>
+                <td>1</td>
+                <td>Taniaa</td>
+                <td>Mumbai</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pranjal</td>
+                <td>Kochi</td>
+            </tr>     
+        </tbody>
+    </table>
+  
+ 
+
+
+</body>
+</html>
